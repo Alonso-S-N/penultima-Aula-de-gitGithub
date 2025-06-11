@@ -36,14 +36,22 @@ public class Caneta {
         this.ponta = ponta;
     }
 
-    public void rabiscar(boolean tampada){
-        if (tampada == false){
+    public void rabiscar(){
+        if (getTampada() == false){
             System.out.println("rabiscando");
         } else {
             System.out.println("destampe a caneta primeiro");
         }
 
     }
+public void riscar (){
+        if (getTampada() == false) {
+            System.out.println("riscando");
+        } else {
+            System.out.println("destampe a caneta primeiro");
+        }
+}
+
 
     public Caneta(String cor, String marca, double ponta, boolean tampada) {
         this.cor = cor;
